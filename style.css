@@ -9,6 +9,7 @@
 }
 .formu {
 padding-left: 20vw;
+padding-bottom: 5vw;
 }
 .content {
     position: absolute;
@@ -32,4 +33,9 @@ padding-left: 20vw;
 }
 .card:hover .overlay {
     opacity: 1;
+}
+.sens-btn {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
 }
