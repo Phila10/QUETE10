@@ -1,15 +1,16 @@
+/* CAROUSEL */
 .carousel-inner {
     padding-bottom: 2em;
 }
+/* FIN CAROUSEL */
+
+/* CARDS */
 .card-deck {
     padding-bottom: 2em;
 }
+
 .d-block {
     height: 20vw;
-}
-.formu {
-padding-left: 20vw;
-padding-bottom: 5vw;
 }
 .content {
     position: absolute;
@@ -34,8 +35,16 @@ padding-bottom: 5vw;
 .card:hover .overlay {
     opacity: 1;
 }
+/* FIN CARDS */
+/* FORMU */
+.formu {
+padding-left: 20vw;
+padding-bottom: 5vw;
+}
 .sens-btn {
     width: 75%;
     display: flex;
     justify-content: flex-end;
 }
+/* FIN FORMU */
+
