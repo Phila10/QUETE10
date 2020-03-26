@@ -1,16 +1,78 @@
+@font-face {
+    font-family: "aniron";
+    src: url(polices/Aniron-7BaP.ttf);
+}
+
+@font-face {
+    font-family: "tngan";
+    src: url(polices/tngan.ttf);
+}
+@font-face {
+    font-family: "partyBusiness";
+    src: url("polices/PartyBusiness-4B0K.ttf")
+}
+/* POLICE */
+nav a,
+h5,
+li,
+form,
+.form-control,
+.content {
+    font-family: "aniron";
+    list-style-type: none;
+}
+p,
+.ok,
+h4
+{
+    font-family: "partyBusiness"; 
+}
+
+/* POLICE */
+
 /* NAVBAR */
-.navbar {
-    background-color:  #f57c00;
+
+nav.navbar {
+    background-color:  #ec5813;
+    font-size: 1em;
+    padding: 0;
+}
+a.navbar-brand {
+    font-size: 1.5em;
+}
+.nav-item {
+    margin-left: 3em;
+    font-size: 15px;
 }
 /* FIN NAVBAR */
 
 /* CAROUSEL */
 .carousel-inner {
     padding-bottom: 2em;
+    font-size: 1em;
+}
+div.carousel-caption {
+    bottom: 50px;
 }
 /* FIN CAROUSEL */
 
 /* CARDS */
+.card-body {
+    background-color: black;
+}
+.fellows {
+    font-size: 1.2vw;
+    text-align: center;
+}
+strong {
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+.deco {
+    font-family: "tngan";
+    color: #fe661d;
+    font-size: 2.5vw;
+}
 .card-deck {
     padding-bottom: 2em;
 }
@@ -18,22 +80,34 @@
 .d-block {
     height: 35vw;
 }
-.content {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform:  translate(-50%, -50%);
+.card-text {
     color: white;
-    text-transform: uppercase;
-    font-size: 1em;
-    background-color: grey;
-    border-radius: 5px;
-    padding: 5px;
+}
+.content{
+    z-index: -1;
+    font-size: 1.5vw;
+    background-color: rgba(255, 255, 255, .8);
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.img-card-dead:hover {
+    filter: brightness(50%);
+}
+.color-reward {
+    color: #fe661d; 
+}
+.card-dead {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ec5813;
+    font-size: 5vw;
 }
 
 .overlay {
     position: absolute;
-    height: 100%;
+    height: 10%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -41,41 +115,68 @@
 .card:hover .overlay {
     opacity: 1;
 }
+.img-card:hover {
+    opacity: 0.8;
+}
+.card-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+}
 /* FIN CARDS */
 /* FORMU */
+.contact-title {
+    color: white;
+    grid-area: contact;
+    text-align: center;
+    padding-top: 1em;
+}
+#formu-form {
+    grid-area: formu;
+    padding-top: 1em;
+    padding-left: 2em;
+}
 .formu {
-padding-left: 20vw;
 padding-bottom: 5vw;
-background-color: black;}
+background-color: black;
+display: grid;
+grid-template-areas: 
+"contact img-card"
+"formu img-card";
+grid-template-rows: 50px ;
+}
+
 .sens-btn {
     width: 75%;
     display: flex;
     justify-content: flex-end;
 }
+img.img-contact {
+    width:28em;
+    padding-top: 2em;
+    padding-left: 5em;
+}
 /* FIN FORMU */
 /* FOOTER  */
 footer {
-    background-color: #f57c00;
+    background-color: #ec5813;
+    list-style-type: none;
+    font-size: 1.3vw;
 }
-/* FIN FOOTER */
-/* REWARD */
-.media-object {
-    background-color: black;
+.yes {
+    color: white;
 }
-/* FIN REWARD */
-/* GOLUM */
-img.golum {
-    width: 20%;
-}
-/* FIN GOLUM */
-/* JOIN  */
-img.army {
-    width: 40%;
-}
-img.need-you {
-    width: 20%;
-}
-/* FIN JOIN */
-/* MORE INFO */
 
-/* FIN MORE INFO */
+/* FIN FOOTER */
+
+@media screen and (max-width:650px) {
+    img.img-contact {
+    display: none;
+    }
+    footer {
+        font-size: 3vw;
+    }
+}
